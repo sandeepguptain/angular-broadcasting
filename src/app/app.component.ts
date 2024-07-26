@@ -5,8 +5,10 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: ` <a href="/page-one" target="_blank">Page One</a>
+    <br />
+    <a href="/page-two" target="_blank">Page Two</a>
+    <router-outlet />`,
 })
 export class AppComponent {
   title = 'angular-broadcasting';

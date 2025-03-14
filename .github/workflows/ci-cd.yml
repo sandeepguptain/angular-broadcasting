@@ -26,7 +26,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build -- --configuration production --base-href="/<REPO-NAME>/"
+        run: npm run build -- --configuration production --base-href="/angular-broadcasting/"
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
